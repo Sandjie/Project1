@@ -4,27 +4,37 @@
 	<meta charset="UTF-8">
 	<title>Eat & Burn</title>
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-</head>
+	<script src="http://platform.fatsecret.com/js?key=f7073d2f1622413f91641b185b3eee94$auto_load=true"></script>
+		<script>
+		fatsecret.setContainer("my_container");
+		fatsecret.setCanvas("home");
+		</script>
+	</head>
 <body>
 <div id="content-container">
+	<div id="my_container" class="fatsecret_container">
 	<div id="search">
 		<form id="foodSearch" method= "get">
 
 
+
+	</<div>
+		
+	</div>
 		</form>
 	</div>
 </div>
 
-<script src="http://platform.fatsecret.com/js?key=f7073d2f1622413f91641b185b3eee94"></script>
+
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">
 
 var food =[];
 
 function displayNutrition() {
-     var animal = $(this).attr("data-name");
-     var queryURL = "http://platform.fatsecret.com/js?key=" +
-       food + "f7073d2f1622413f91641b185b3eee94";
+     var food = $(this).attr("data-name");
+     var queryURL = "http://platform.fatsecret.com/search?q=" +
+       food + "&js?key=f7073d2f1622413f91641b185b3eee94";
      $.ajax({
          url: queryURL,
          method: "GET"
@@ -35,6 +45,6 @@ function displayNutrition() {
 
 
 
-	
+	</script>
 </body>
 </html>
