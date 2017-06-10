@@ -1,50 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Eat & Burn</title>
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-	<script src="http://platform.fatsecret.com/js?key=f7073d2f1622413f91641b185b3eee94$auto_load=true"></script>
-		<script>
-		fatsecret.setContainer("my_container");
-		fatsecret.setCanvas("home");
-		</script>
-	</head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>Eat & Burn</title>
+</head>
+
 <body>
-<div id="content-container">
-	<div id="my_container" class="fatsecret_container">
-	<div id="search">
-		<form id="foodSearch" method= "get">
 
+<img class="logo" src="images/Logo.png" alt="Eat and Burn Logo">
 
+<img class="navBar" src="images/navBar.png" alt="navBar">
 
-	</<div>
-		
-	</div>
-		</form>
-	</div>
-</div>
+<img class="featureImg" src="images/featureImg.png" alt="Featured Image">
 
+<h1 class="yourFood" class=medium>YOUR FOOD</h1>
 
-<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script type="text/javascript">
+<!--Where users enters food choice -->
+<form><input type="text" id="enterFood" placeholder="enter here.."></input></form>
 
-var food =[];
+<!--This will contain the search click funtion -->
+<p class="search">SEARCH</p>
 
-function displayNutrition() {
-     var food = $(this).attr("data-name");
-     var queryURL = "http://platform.fatsecret.com/search?q=" +
-       food + "&js?key=f7073d2f1622413f91641b185b3eee94";
-     $.ajax({
-         url: queryURL,
-         method: "GET"
-       })
-     // creating a function to responsed to the following
-     .done(function(response) {
+<img class="searchBar" src="images/searchBar.png" alt="searchBar">
 
+<img class="foodDisplay" src="images/foodDisplay.png" alt="displayBar">
 
+<!-- Where the users food input will take place -->
+<div id="userInput"><h3 class="userTypeDisplay">Food Displays Here</h3></div>
 
+<!-- Where the calories will appear -->
+<div class="calorieCount"><p class="caloriesDisplay">0000</p></div>
 
-	</script>
+<h3 class="nFacts">Nutrition Facts</h3>
+
+<h3 class="howTo">How to Burn it!</h3>
+
+<img class="mealBox" src="images/mealBox.png" alt="mealBox">
+
+<h3 class="yourMeal">Your Meal</h3>
+
+<img class="resetBTN" src="images/resetBTN.png" alt="Reset Button">
+
+<!-- Where meal items will append -->
+<div id="mealItems"><p>Placeholder Text</p></div>
+
+<img class="bottomNav" src="images/bottomNAV.png" alt="bottomNav">
+
+<p class="thanks">Thanks For Visting!</p>
+
+<p class="copyright">© 2017 Eat & Burn </p>
+
 </body>
 </html>

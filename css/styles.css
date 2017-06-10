@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: brandonGrotesqueMed;
+    src: url(../fonts/Brandon_med.otf);
+}
+
+@font-face {
+    font-family: brandonGrotesqueReg;
+    src: url(../fonts/Brandon_reg.otf);
+}
+
+@font-face {
+    font-family: brandonGrotesqueLight;
+    src: url(../fonts/Brandon_light.otf);
+}
+
+.medium {
+    font-family:brandonGrotesqueMed;
+}
+
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.logo {
+    position: absolute;
+}
+
+.navBar {
+    float: left;
+    position: absolute;
+    z-index: -10;
+}
+
+.featureImg {
+    position: absolute;
+    z-index: -20;
+    margin-top: 73px;
+}
+
+.yourFood {
+    position: absolute;
+    float: left;
+    color: #ef3d23;
+    font-size: 70px;
+    margin-top: 344px;
+    margin-left: 250px;
+}
+
+#enterFood {
+    float: left;
+    position: absolute;
+    font-family:brandonGrotesqueLight;
+    font-size: 50px;
+    width: 490px;
+    height: 72px;
+    padding-left: 20px;
+    margin-top: 420px;
+    margin-left: 215px;
+}
+
+form input {
+    color: #ef3d23 !important;
+}
+
+input::placeholder {
+    color: #ef3d23 !important;
+}
+
+.search {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    margin-top: 413px;
+    margin-left: 845px;
+}
+
+.searchBar {
+    position: absolute;
+    z-index: -20;
+    margin-top: 420px;
+    margin-left: 795px;
+}
+
+.foodDisplay {
+    position: absolute;
+    margin-top: 768px;
+    z-index: -30;
+}
+
+.userTypeDisplay {
+    font-size: 70px;
+    color: black;
+    font-family:brandonGrotesqueMed;
+    margin-top: 990px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.caloriesDisplay {
+    font-size: 170px;
+    color: white;
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 50px;
+    font-family:brandonGrotesqueReg;
+}
+
+.nFacts {
+    font-size: 50px;
+    color: Black;
+    font-family:brandonGrotesqueMed;
+    margin-top: 1350px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.howTo {
+    font-family:brandonGrotesqueMed;
+    font-size: 70px;
+    color: black;
+    position: absolute;
+    margin-top: 990px;
+    margin-left: 800px;
+}
+
+.mealBox {
+    margin-top: 1751px;
+    position: absolute;
+}
+
+.yourMeal {
+    font-size: 70px;
+    color: #ef3d23;
+    font-family:brandonGrotesqueMed;
+    margin-top: 1790px;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.resetBTN {
+    margin-top: 2100px;
+    margin-left:480px;
+    position: absolute;
+}
+
+#mealItems {
+    margin-top: 1880px;
+    margin-left: 50px;
+    position: absolute;
+    font-size: 40px;
+    font-family:brandonGrotesqueReg;
+    color: white;
+}
+
+.bottomNav {
+    position: absolute;
+    margin-top: 2205px;
+}
+
+.thanks {
+    color: black;
+    font-size: 30px;
+    font-family:brandonGrotesqueReg;
+    margin-top: 2220px;
+    margin-left: 1220px;
+    position: absolute;
+}
+
+.copyright {
+    color: black;
+    font-size: 22px;
+    font-family:brandonGrotesqueReg;
+    margin-top: 2240px;
+    margin-left: 650px;
+    position: absolute;
+}
