@@ -5,10 +5,19 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
 <title>Eat & Burn</title>
 </head>
 
 <body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+     
 
 <img class="logo" src="images/Logo.png" alt="Eat and Burn Logo">
 
@@ -38,7 +47,13 @@
 
 <h3 class="howTo">How to Burn it!</h3>
 <!--_____________Video carousel_________________________________-->
-
+ <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+  </div>
 <!--_____________End of video carousel_________________________________-->
 <img class="mealBox" src="images/mealBox.png" alt="mealBox">
 
@@ -55,5 +70,12 @@
 
 <p class="copyright">© 2017 Eat & Burn </p>
 
+
+
+<script>
+     $(document).ready(function(){
+      $(".carousel").carousel();
+    });
+</script>
 </body>
 </html>
