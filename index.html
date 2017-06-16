@@ -1,59 +1,95 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<title>Eat & Burn</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Eat & Burn - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link href="css/nutritionLabel.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
 </head>
 
 <body>
 
-<img class="logo" src="images/Logo.png" alt="Eat and Burn Logo">
 
-<img class="navBar" src="images/navBar.png" alt="navBar">
+<nav class="black" role="navigation">
+    <div class="row">
+      <div class="col l4 s8">
+        <div class="nav-wrapper container">
 
-<img class="featureImg" src="images/featureImg.png" alt="Featured Image">
+        <img class="eatLogo" src="images/logo.png" alt="logo">
 
-<h1 class="yourFood" class=medium>YOUR FOOD</h1>
+        </div>
+      </div>
+      <div class="col l8 s4">
+         <ul id="nav-mobile" class="right">
+        <li>
+          <!--<a  id="btnLogout" class="hide">Log out</a></li>-->
+          </ul>
+        <div class="card-panel red" id=remove style="padding-bottom: 39px;">
+        </div>
+      </div>
+    </div>
 
-<!--Where users enters food choice -->
-<form><input type="text" id="enterFood" placeholder="enter here.."></input></form>
+  </nav>
 
-<!--This will contain the search click funtion -->
-<p class="search">SEARCH</p>
+  <!-- form-->
+  <div id=userAuth style="padding-top: 40px;">
+  <div class="container" id="validation">
 
-<img class="searchBar" src="images/searchBar.png" alt="searchBar">
+    <div class="row">
+      <form class="col s12">
 
-<img class="foodDisplay" src="images/foodDisplay.png" alt="displayBar">
+       
+        <div class="row">
+            <h3 align="center">Welcome to Eat & Burn!</h3>
+            <h4 align="center"> Sign up to keep track of calories and get fit!</h4>
+            <span id="error"></span>
+          <div class="input-field col s12">
+            <input id="txtEmail" type="email">
+            <label for="email">Email</label>
+          </div>
+        </div>
 
-<!-- Where the users food input will take place -->
-<div id="userInput"><h3 class="userTypeDisplay">Food Displays Here</h3></div>
+             <div class="row">
+          <div class="input-field col s12">
+            <input id="txtPassword" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
 
-<!-- Where the calories will appear -->
-<div class="calorieCount"><p class="caloriesDisplay">0000</p></div>
+        <a id="btnLogin" class="btn-large waves-effect waves-light teal lighten-1  ">Log in</a>
 
-<h3 class="nFacts">Nutrition Facts</h3>
+            <a id="btnSignup" class="btn-large waves-effect waves-light grey lighten-1  ">Sign up</a>
+      </form>
+    </div>
 
-<h3 class="howTo">How to Burn it!</h3>
-<!--_____________Video carousel_________________________________-->
+  </div>
+  </div>
 
-<!--_____________End of video carousel_________________________________-->
-<img class="mealBox" src="images/mealBox.png" alt="mealBox">
 
-<h3 class="yourMeal">Your Meal</h3>
-
-<img class="resetBTN" src="images/resetBTN.png" alt="Reset Button">
-
-<!-- Where meal items will append -->
-<div id="mealItems"><p>Placeholder Text</p></div>
-
-<img class="bottomNav" src="images/bottomNAV.png" alt="bottomNav">
-
-<p class="thanks">Thanks For Visting!</p>
-
-<p class="copyright">© 2017 Eat & Burn </p>
+  <!--- form ends-->
+<footer class="page-footer black" id="footerH">
+       <div class= "card-panel red"> 
+      <p class="copyright">© 2017 Eat & Burn </p>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
+
 </html>
