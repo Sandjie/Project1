@@ -4,16 +4,13 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-  <title>Eat & Burn - Materialize</title>
+  <title>Eat & Burn </title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">-->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <link href="css/nutritionLabel.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 
 </head>
@@ -26,7 +23,7 @@
       <div class="col l4 s8">
         <div class="nav-wrapper container">
 
-        <img class="eatLogo" src="images/logo.png" alt="logo">
+        <img class="eatLogo" src="images/logoSmaller.png" alt="logo">
 
         </div>
       </div>
@@ -43,7 +40,7 @@
   </nav>
 
   <!-- form-->
-  <div id=userAuth style="padding-top: 40px;">
+  <div id="userAuth">
   <div class="container" id="validation">
 
     <div class="row">
@@ -51,25 +48,27 @@
 
        
         <div class="row">
-            <h3 align="center">Welcome to Eat & Burn!</h3>
-            <h4 align="center"> Sign up to keep track of calories and get fit!</h4>
+            <h2 align="center">Welcome to Eat & Burn</h2>
+            <h4 align="center"> Sign up to keep track of your calories and get fit!</h4>
+            <br>
+            <br>
             <span id="error"></span>
           <div class="input-field col s12">
-            <input id="txtEmail" type="email">
-            <label for="email">Email</label>
+            <input id="txtEmail" id="user-input-email" type="email" placeholder="email">
           </div>
         </div>
 
              <div class="row">
           <div class="input-field col s12">
-            <input id="txtPassword" type="password">
-            <label for="password">Password</label>
+            <input id="txtPassword" type="password" placeholder="Password">
+            <p class="light italic"> * Minimum six characters length</p>
           </div>
         </div>
+        <br>
 
-        <a id="btnLogin" class="btn-large waves-effect waves-light teal lighten-1  ">Log in</a>
+        <a id="btnLogin" class="btn-large waves-effect waves-light red  ">Log in</a>
 
-            <a id="btnSignup" class="btn-large waves-effect waves-light grey lighten-1  ">Sign up</a>
+        <a id="btnSignup" class="btn-large waves-effect waves-light black ">Sign up</a>
       </form>
     </div>
 
@@ -78,7 +77,7 @@
 
 
   <!--- form ends-->
-<footer class="page-footer black" id="footerH">
+<footer class="page-footer black" id="footerF">
        <div class= "card-panel red"> 
       <p class="copyright">© 2017 Eat & Burn </p>
     </div>

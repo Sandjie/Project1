@@ -6,8 +6,6 @@
 
   $("#welcome").html("<h3> Welcome " + localStorage.getItem("email") + "</h3>")
 
-
-
   // Function to display app once the user has logged in of signed up
   function displayApp() {
     firebase.auth().onAuthStateChanged(function (user) {
@@ -22,7 +20,7 @@
   displayApp();
 
   });
-//Milena's code
+
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyD_dppV69T8GUcG9kD-n4tW4rIsr8wdtoY",
@@ -35,8 +33,6 @@ var config = {
 firebase.initializeApp(config);
 
 // var database = firebase.database();
-
-
 const txtPassword = document.getElementById("txtPassword");
 const txtEmail = document.getElementById("txtEmail");
 const btnLogin = document.getElementById("btnLogin");
@@ -122,9 +118,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 
 
 })
-//end of Milena code.
-
-
 
 $("#download-button").on("click", function (event) {
        event.preventDefault();

@@ -10,10 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">-->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <link href="css/nutritionLabel.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
 <style>
  .parallax-container {
@@ -32,7 +29,7 @@
       <div class="col l4 s8">
         <div class="nav-wrapper container">
 
-          <a id="logo-container" href="#" class="brand-logo">EAT <img src="images/and.png" class="and"> BURN</a>
+         <img class="eatLogo" src="images/logoSmaller.png" alt="logo">
         </div>
       </div>
       <div class="col l8 s4">
@@ -40,7 +37,7 @@
         <li>
           <!--<a  id="btnLogout" class="hide">Log out</a></li>-->
           </ul>
-        <div class="card-panel red" style="padding-bottom: 39px;">
+        <div class="card-panel red"  id=remove style="padding-bottom: 39px;">
          
 
         </div>
@@ -55,11 +52,11 @@
       <div class="container">
         <br><br>
        
-        <h1 class="header center teal-text text-lighten-2">Thanks for using Eat & Burn</h1>
+        <h1 class="header center red-text" id="thanks">Thanks for using Eat & Burn</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Stay fit!</h5>
+          <h5 class="header col s12 light" id="stay">Stay fit!</h5>
               <br><br>
-            <a href="index.html"  class="btn-large waves-effect waves-light teal lighten-1 ">Log In</a>
+            <a href="index.html"  class="btn-large waves-effect waves-light red ">Log In</a>
         </div>
 
         <br><br>
@@ -70,13 +67,11 @@
 
 
 
-
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/nutritionLabel-min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/logic.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 

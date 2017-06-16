@@ -16,6 +16,42 @@
     src: url(../fonts/Brandon_light.otf);
 }
 
+/* index/sign up page */
+
+#userAuth  {
+    font-family:brandonGrotesqueMed;
+    color:black;
+    padding: 40px 0px 70px 0px
+}
+
+#txtPassword{
+      height: 50px;
+      width: 1000px;
+      background-color: Black;
+      color: #ef3d23 !important;
+      padding-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+      border: none;
+      box-shadow: none;
+    } 
+
+#txtEmail{
+      height: 50px;
+      width: 1000px;
+      background-color: Black;
+      color: #ef3d23 !important;
+      padding-left: 20px;
+      margin-right: 20px;
+      font-size: 20px;
+      border: none;
+      box-shadow: none;
+    } 
+
+
+
+/* eatBurn page */
+
 .medium {
     font-family:brandonGrotesqueMed;
 }
@@ -61,7 +97,7 @@ form input {
 }
 
 #moveDown {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .mealBox {
     margin-top: 1751px;
@@ -218,6 +254,11 @@ u {
     margin-bottom: 30px;
 }
 
+#btnLogout {
+    font-family: brandonGrotesqueMed;
+    font-size:25px;
+}
+
 
 @media screen and (max-width: 600px){
     .parallax-container {
@@ -352,4 +393,20 @@ u {
   #vidDiv {
   height: 500px;
   }
+  }
+
+
+  /* Thanks page */
+
+  #thanks {
+    font-family: brandonGrotesqueMed;
+    font-size: 70px;
+    text-shadow: 2px 2px #000000;
+  }
+   
+  #stay {
+    font-family: brandonGrotesqueMed;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: black;
   }
