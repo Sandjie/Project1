@@ -122,7 +122,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 $("#download-button").on("click", function (event) {
        event.preventDefault();
      var input = $("#user-input").val().trim();
-      var urlQuery = "http://api.nutritionix.com/v1_1/search/" + input + "?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=bb482bd0&appKey=c8db65a3dc0de939c5e49ed465a37e6b"
+      var urlQuery = "https://api.nutritionix.com/v1_1/search/" + input + "?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=bb482bd0&appKey=c8db65a3dc0de939c5e49ed465a37e6b"
 
     
     // FIRST URL//   "http://api.nutritionix.com/v1_1/search/" + input + "?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=bb482bd0&appKey=c8db65a3dc0de939c5e49ed465a37e6b"
